@@ -80,22 +80,22 @@
     margin: var(--section-title-margin); /* Set margin using custom property */
     color: var(--section-title-color); /* Set text color using custom property */
   }
-  /* Target anchor elements only containing a hyperlink (with an href attribute) */
+  /* Target anchor elements only containing a hyperlink */
 a[href] {
-    text-decoration: none; /* Ensure no decoration for links */
+    text-decoration: none; /* Remove any text decorations */
   }
   
-  /* Target the visited state for the link */
+  /* Target the visited state for hyperlinks */
   a[href]:visited {
     font-style: italic; /* Italicize the text for visited links */
   }
   
-  /* Target the hover state for the link */
+  /* Target the hover state for hyperlinks */
   a[href]:hover {
-    text-decoration: underline; /* Decorate the link with an underline when hovering */
+    text-decoration: underline; /* Add underline when hovering over the link */
   }
   
-  /* Target the active state for the link */
+  /* Target the active state for hyperlinks */
   a[href]:active {
     background-color: var(--color-light-grey); /* Set background color to color-light-grey */
   }
