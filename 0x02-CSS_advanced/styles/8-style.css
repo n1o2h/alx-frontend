@@ -1,0 +1,61 @@
+:root {
+    /* Define custom font-family properties */
+   --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 
+   /* Define custom font-size properties */
+   --font-size-small: 1.2rem;
+   --font-size-medium: 1.6rem;
+   --font-size-large: 1.8rem;
+   --font-size-x-large: 2.3rem;
+   --font-size-xx-large: 4.8rem;
+ 
+   /* Define custom font-weight properties */
+   --font-weight-regular: 400;
+   --font-weight-bold: 700;
+   /* Define custom line-height properties */
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+   }
+   
+ html {
+     scroll-behavior: smooth;
+     font-size: 62.5%; /* This makes 1rem equal to 10px instead of the default 16px */
+   }
+  
+ body {
+     color: #161616;
+     color: var(--text-color);
+     /* Set body’s font-family to font-family-base */
+     font-size: var(--font-size-medium);
+   font-family: var(--font-family-base);
+   font-weight: var(--font-weight-regular);
+   line-height: var(--line-height-base); 
+ 
+   }
+   a {
+     color: #161616; /* Text color */
+     /* Ensure links declaration comes after headings */
+     color: var(--text-color);
+ 
+ }
+ /* Set all 6 levels of section headings' font-family to font-family-title */
+ h1, h2, h3, h4, h5, h6 {
+     font-family: var(--font-family-title);
+     font-weight: var(--font-weight-bold);
+   }
+ .visually-hidden {
+     display: none;
+ }
+ .card-category {
+     color: #D73953;
+     color: var(--color-primary);
+ }
+ .section-tagline {
+     color: #D73953; /* Text color */
+     color: var(--color-primary);
+     
+ }
+ 
+ 
